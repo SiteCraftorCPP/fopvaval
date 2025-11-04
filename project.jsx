@@ -4,6 +4,7 @@ import {
   ClipboardCheck,
   MessageCircle,
 } from "lucide-react";
+import phonImage from "./images/phon.png";
 
 // =============================
 // Быстрые настройки контента
@@ -116,7 +117,7 @@ export default function DonorLanding() {
       {/* Global background image */}
       <motion.div 
         className="fixed inset-0 -z-10 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: 'url(/images/phon.png)' }}
+        style={{ backgroundImage: `url(${phonImage})` }}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
