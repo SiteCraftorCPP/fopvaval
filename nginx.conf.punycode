@@ -24,14 +24,10 @@ server {
     root /var/www/осознанныйвыбор.рф;
     index index.html;
     
-    # SSL certificates (будут созданы certbot)
-    # ⚠️ ВАЖНО: Если сертификат получен через Punycode, используй:
-    # ssl_certificate /etc/letsencrypt/live/xn--80aacf4ai1b8a.xn--p1ai/fullchain.pem;
-    # ssl_certificate_key /etc/letsencrypt/live/xn--80aacf4ai1b8a.xn--p1ai/privkey.pem;
-    #
-    # Если сертификат получен через русский домен (работает редко):
-    ssl_certificate /etc/letsencrypt/live/осознанныйвыбор.рф/fullchain.pem;
-    ssl_certificate_key /etc/letsencrypt/live/осознанныйвыбор.рф/privkey.pem;
+    # SSL certificates (Punycode версия - для русских доменов)
+    # Punycode домена: xn--80aacf4ai1b8a.xn--p1ai
+    ssl_certificate /etc/letsencrypt/live/xn--80aacf4ai1b8a.xn--p1ai/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/xn--80aacf4ai1b8a.xn--p1ai/privkey.pem;
     
     # SSL settings
     ssl_protocols TLSv1.2 TLSv1.3;

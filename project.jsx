@@ -35,7 +35,7 @@ const profile = {
     readyToMeet: true,
   },
   contacts: {
-    telegram: "https://t.me/your_username",
+    telegram: "https://t.me/fapavlov",
     email: "mailto:you@example.com",
   },
 };
